@@ -341,13 +341,6 @@ html{scroll-padding-top:70px}
 .clip.in img{clip-path:inset(0 0 0 0);transform:scale(1)}
 .collage figure.clip:not(.in){box-shadow:none;border-color:transparent}
 
-/* cursor */
-.cur{position:fixed;left:0;top:0;z-index:95;pointer-events:none;width:12px;height:12px;margin:-6px 0 0 -6px;border-radius:50%;background:var(--red);display:grid;place-items:center;color:#fff;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;transition:width .4s var(--ease),height .4s var(--ease),margin .4s var(--ease),background .3s,opacity .3s;opacity:0}
-.cur span{opacity:0;transition:opacity .2s}
-.cur.big{width:84px;height:84px;margin:-42px 0 0 -42px;background:rgba(171,72,58,.92)}
-.cur.big span{opacity:1}
-.cur.on{opacity:1}
-@media (pointer:fine){.has-cur,.has-cur *{cursor:none!important}}
 
 /* statement */
 .state{padding:150px 0;background:var(--sand)}
@@ -676,7 +669,6 @@ html{scroll-padding-top:70px}
 <div class="fab" id="fab"><a class="btn btn-ghost" href="tel:+966543979744">Call</a><a class="btn btn-red" href="#reserve">Reserve a table</a></div>
 
 <div class="grain" aria-hidden="true"></div>
-<div class="cur" id="cur" aria-hidden="true"><span></span></div>
 
 <dialog id="dlg"><div class="dm"><div class="im"><img id="dImg" alt=""></div><div class="tx"><button class="x" data-close aria-label="Close">×</button><p class="eyebrow" id="dCat"></p><h3 id="dName"></h3><p id="dDesc"></p><div class="pr" id="dPrice"></div><small id="dCal" style="color:var(--muted)"></small><a class="btn btn-red" href="#reserve" data-close style="align-self:flex-start;margin-top:10px">Reserve to try it</a></div></div></dialog>
 <dialog id="lb"><div class="lb"><button class="x" data-close aria-label="Close">×</button><img id="lbImg" alt=""><p class="cap">Guest photo · Google Maps</p></div></dialog>
@@ -1041,18 +1033,8 @@ function scenes() {
 const queue = () => { if (!ticking) { ticking = true; requestAnimationFrame(scenes); } };
 addEventListener('scroll', queue, {passive: true}); addEventListener('resize', queue); scenes();
 
-/* ---------- cursor + magnetic buttons (mouse only) ---------- */
+/* ---------- magnetic buttons (mouse only) ---------- */
 if (finePtr && !reduced) {
-  const cur = $('#cur'), lab = cur.firstElementChild;
-  let mx = -100, my = -100, cxp = -100, cyp = -100;
-  document.documentElement.classList.add('has-cur');
-  addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; cur.classList.add('on');
-    const t = e.target.closest('.dish,.mason button,.card,[data-cur]');
-    cur.classList.toggle('big', !!t); lab.textContent = t ? (t.classList.contains('card') ? 'Taste' : t.closest('.mason') ? 'Open' : 'View') : '';
-  });
-  document.addEventListener('mouseleave', () => cur.classList.remove('on'));
-  const follow = () => { cxp += (mx - cxp) * .2; cyp += (my - cyp) * .2; cur.style.transform = `translate3d(${cxp}px,${cyp}px,0)`; requestAnimationFrame(follow); };
-  follow();
   document.querySelectorAll('.btn').forEach(b => {
     b.addEventListener('mousemove', e => { const r = b.getBoundingClientRect(); b.style.transform = `translate(${(e.clientX - r.left - r.width / 2) * .25}px,${(e.clientY - r.top - r.height / 2) * .35}px)`; });
     b.addEventListener('mouseleave', () => b.style.transform = '');
