@@ -1,0 +1,1063 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mimosa Jeddah · ميموزا جدة — Mediterranean Steakhouse at Jeddah Walk</title>
+<meta name="description" content="Mimosa Jeddah — a modern Mediterranean steakhouse at Cascade, Jeddah Walk. Riviera classics, signature steaks, fresh seafood and a garden terrace. Open daily from 1 PM.">
+<meta property="og:title" content="Mimosa Jeddah — Where the French Riviera meets the Red Sea">
+<meta property="og:description" content="Modern Mediterranean steakhouse at Cascade, Jeddah Walk. 4.8★ from 3,400+ Google reviews.">
+<meta property="og:image" content="img/g/g2.webp">
+<meta name="theme-color" content="#ab483a">
+<link rel="icon" href="img/flower.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Mimosa Jeddah","alternateName":"ميموزا جدة","servesCuisine":["Mediterranean","Steakhouse","French"],"priceRange":"SAR 200+","telephone":"+966543979744","address":{"@type":"PostalAddress","streetAddress":"Prince Mohammed Bin Abdulaziz St, Cascade at Jeddah Walk, Al Andalus","addressLocality":"Jeddah","postalCode":"23322","addressCountry":"SA"},"geo":{"@type":"GeoCoordinates","latitude":21.5485421,"longitude":39.1387097},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday","Monday","Tuesday","Wednesday"],"opens":"13:00","closes":"01:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Thursday","Friday"],"opens":"13:00","closes":"02:00"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"3404"},"sameAs":["https://www.instagram.com/mimosa.jeddah"]}
+</script>
+<style>
+:root{
+  --sand:#f1e7dc; --sand-2:#e6d6c6; --sand-3:#d9c3ae; --red:#ab483a; --red-deep:#7a2e24;
+  --ink:#1e1916; --ink-2:#2b2420; --sage:#9db7ac; --navy:#22314a; --cream:#fbf6f0; --muted:#6f6058;
+  --serif:"Fraunces",Georgia,serif; --sans:"Manrope",system-ui,sans-serif;
+  --ease:cubic-bezier(.2,.7,.1,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--sand);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+.wrap{width:min(1240px,100% - 40px);margin-inline:auto}
+.eyebrow{font-size:.74rem;letter-spacing:.24em;text-transform:uppercase;font-weight:700;color:var(--red)}
+.h2{font-family:var(--serif);font-weight:400;font-size:clamp(2.3rem,5.4vw,4.6rem);line-height:1.02;letter-spacing:-.02em}
+.h2 em{font-style:italic;color:var(--red)}
+.btn{display:inline-flex;align-items:center;gap:.6em;padding:.95em 1.6em;border-radius:999px;border:1px solid currentColor;text-decoration:none;font-weight:600;font-size:.92rem;letter-spacing:.02em;transition:background .35s var(--ease),color .35s,transform .35s var(--ease)}
+.btn:hover{transform:translateY(-2px)}
+.btn-red{background:var(--red);border-color:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-deep);border-color:var(--red-deep)}
+.btn-ghost{color:#fff;background:rgba(255,255,255,.08);backdrop-filter:blur(8px)}
+.btn-ghost:hover{background:#fff;color:var(--ink)}
+
+/* credit */
+.credit{background:var(--ink);color:#e9dccf;font-size:.75rem;text-align:center;padding:.5em 1em;letter-spacing:.04em;position:relative;z-index:60}
+.credit a{color:#f3c9a8}
+
+/* loader */
+.loader{position:fixed;inset:0;z-index:100;background:var(--sand);display:grid;place-items:center;transition:clip-path 1s var(--ease);clip-path:inset(0 0 0 0)}
+.loader img{width:min(240px,55vw);animation:ldr 1.4s var(--ease) both}
+.loader.done{clip-path:inset(0 0 100% 0)}
+@keyframes ldr{from{opacity:0;transform:translateY(16px) scale(.96);filter:blur(6px)}to{opacity:1;transform:none;filter:none}}
+
+/* nav */
+.nav{position:fixed;left:0;right:0;top:var(--ct,34px);z-index:50;transition:top .4s var(--ease),background .4s,box-shadow .4s}
+.nav.scrolled{top:0;background:rgba(241,231,220,.86);backdrop-filter:blur(14px);box-shadow:0 1px 0 rgba(30,25,22,.08)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:20px;height:76px}
+.nav .logo{height:34px;width:auto}
+.nav .logo-red{display:none}
+.nav.scrolled .logo-red{display:block}.nav.scrolled .logo-beige{display:none}
+.nav ul{display:flex;gap:30px;list-style:none}
+.nav ul a{text-decoration:none;color:#fff;font-size:.86rem;font-weight:600;letter-spacing:.04em;position:relative}
+.nav.scrolled ul a{color:var(--ink)}
+.nav ul a::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:right;transition:transform .4s var(--ease)}
+.nav ul a:hover::after{transform:scaleX(1);transform-origin:left}
+.nav-r{display:flex;align-items:center;gap:14px}
+.status{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;font-weight:600;color:#fff;white-space:nowrap}
+.nav.scrolled .status{color:var(--ink)}
+.dot{width:8px;height:8px;border-radius:50%;background:#e0a33a;box-shadow:0 0 0 0 rgba(90,180,120,.6)}
+.dot.open{background:#4caf73;animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 8px rgba(76,175,115,0)}100%{box-shadow:0 0 0 0 rgba(76,175,115,0)}}
+.nav .btn{padding:.7em 1.3em}
+.burger{display:none;background:none;border:0;width:44px;height:44px;color:#fff}
+.nav.scrolled .burger{color:var(--ink)}
+.burger span{display:block;width:24px;height:2px;background:currentColor;margin:5px auto;transition:transform .3s}
+.mnav{position:fixed;inset:0;z-index:70;background:var(--red);color:var(--cream);display:flex;flex-direction:column;justify-content:center;padding:40px;gap:8px;clip-path:circle(0 at calc(100% - 40px) 40px);transition:clip-path .7s var(--ease);visibility:hidden}
+.mnav.open{clip-path:circle(150% at calc(100% - 40px) 40px);visibility:visible}
+.mnav a{font-family:var(--serif);font-size:2.4rem;text-decoration:none;font-style:italic}
+.mnav .close{position:absolute;top:22px;right:22px;background:none;border:0;color:inherit;font-size:2rem;width:48px;height:48px}
+
+/* hero */
+.hero{position:relative;height:100svh;min-height:640px;color:#fff;overflow:hidden;background:var(--ink)}
+/* cinematic hero: 3D camera moves over real photos */
+.stage{position:absolute;inset:-4%;perspective:1100px;overflow:hidden}
+.slides{position:absolute;inset:0;transform-style:preserve-3d}
+.slides img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;filter:blur(18px) brightness(1.4) saturate(1.2);transition:opacity 1.6s ease,filter 1.6s ease;backface-visibility:hidden}
+.slides img.on,.slides img.out{animation:var(--cam) 9s cubic-bezier(.33,0,.2,1) forwards}
+.slides img.on{opacity:1;filter:none;z-index:2}
+.slides img.out{opacity:0;filter:blur(14px) brightness(1.3);z-index:1}
+@keyframes cam1{from{transform:translate3d(-4%,0,-60px) scale(1.32) rotateY(6deg)}to{transform:translate3d(3%,-1%,40px) scale(1.12) rotateY(-4deg)}}
+@keyframes cam2{from{transform:translate3d(0,4%,-120px) scale(1.15) rotateX(6deg)}to{transform:translate3d(0,-2%,80px) scale(1.3) rotateX(-2deg)}}
+@keyframes cam3{from{transform:translate3d(4%,-2%,60px) scale(1.35) rotateY(-6deg) rotateZ(1deg)}to{transform:translate3d(-3%,1%,-40px) scale(1.12) rotateY(3deg) rotateZ(0)}}
+@keyframes cam4{from{transform:translate3d(0,0,-200px) scale(1.12) rotateX(-4deg)}to{transform:translate3d(-2%,-3%,60px) scale(1.34) rotateX(2deg) rotateY(-3deg)}}
+.leak{position:absolute;inset:0;z-index:2;pointer-events:none;mix-blend-mode:screen;opacity:.55;background:radial-gradient(40% 55% at 85% 20%,rgba(255,150,80,.55),transparent 70%),radial-gradient(35% 45% at 10% 80%,rgba(255,90,90,.35),transparent 70%);animation:leak 7s ease-in-out infinite alternate}
+.leak.flash{animation:flash 1.4s ease-out,leak 7s ease-in-out infinite alternate}
+@keyframes leak{from{transform:translate(-4%,2%) scale(1);opacity:.35}to{transform:translate(4%,-3%) scale(1.15);opacity:.6}}
+@keyframes flash{0%{opacity:.35}25%{opacity:1;filter:brightness(1.8)}100%{opacity:.4}}
+#dust{position:absolute;inset:0;z-index:2;pointer-events:none;width:100%;height:100%}
+.hero::before{content:"";position:absolute;inset:0;z-index:2;pointer-events:none;box-shadow:inset 0 0 220px 40px rgba(0,0,0,.55)}
+.hero::after{z-index:2;pointer-events:none}
+.scroll-cue,.shot-cap{z-index:3}
+.shot-cap{position:absolute;right:max(20px,(100vw - 1240px)/2);top:130px;color:#fff;font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;font-weight:600;display:flex;gap:14px;align-items:center}
+.shot-cap b{font-family:var(--serif);font-weight:300;font-size:1.6rem;letter-spacing:0}
+.shot-cap i{width:60px;height:1px;background:rgba(255,255,255,.35);position:relative;overflow:hidden}
+.shot-cap i::after{content:"";position:absolute;inset:0;background:#fff;transform-origin:left;animation:bar 6s linear}
+@keyframes bar{from{transform:scaleX(0)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,14,11,.6) 0%,rgba(20,14,11,.25) 45%,rgba(20,14,11,0) 70%),linear-gradient(180deg,rgba(20,14,11,.55) 0%,rgba(20,14,11,.15) 35%,rgba(20,14,11,.35) 60%,rgba(20,14,11,.85) 100%)}
+.hero-c{position:relative;z-index:3;height:100%;display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:9vh}
+.hero h1{font-family:var(--serif);font-weight:300;font-size:clamp(3rem,9.5vw,8.6rem);line-height:.92;letter-spacing:-.035em;max-width:12ch}
+.hero h1 em{font-style:italic;font-weight:400;color:#f6c7a6}
+.hero h1 .ln{display:block;overflow:hidden}
+.hero h1 .ln>span{display:block;transform:translateY(105%);transition:transform 1.2s var(--ease)}
+.ready .hero h1 .ln>span{transform:none}
+.ready .hero h1 .ln:nth-child(2)>span{transition-delay:.12s}
+.ready .hero h1 .ln:nth-child(3)>span{transition-delay:.24s}
+.hero-sub{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-top:34px;flex-wrap:wrap}
+.hero p{max-width:440px;font-size:1.05rem;color:#f6ede5}
+.hero h1,.hero p,.hero-meta,.hero .eyebrow{text-shadow:0 2px 24px rgba(0,0,0,.45)}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.hero-meta{display:flex;gap:34px;font-size:.82rem;color:#eadbcf}
+.hero-meta b{display:block;font-family:var(--serif);font-weight:400;font-size:1.9rem;color:#fff;line-height:1.1}
+.fade-up{opacity:0;transform:translateY(20px);transition:opacity 1s var(--ease) .5s,transform 1s var(--ease) .5s}
+.ready .fade-up{opacity:1;transform:none}
+.dots{position:absolute;right:20px;top:50%;transform:translateY(-50%);z-index:3;display:flex;flex-direction:column;gap:10px}
+.dots button{width:4px;height:28px;border:0;border-radius:4px;background:rgba(255,255,255,.35);padding:0}
+.dots button.on{background:#fff}
+
+/* awning */
+.awning{height:48px;position:relative;z-index:2;filter:drop-shadow(0 3px 3px rgba(60,30,20,.22))}
+.awning::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,var(--navy) 0 46px,#fff 46px 92px);--m:linear-gradient(#000 0 0) top/100% 25px no-repeat,radial-gradient(circle 23px at 23px 25px,#000 97%,#0000) 0 0/46px 100% repeat-x;-webkit-mask:var(--m);mask:var(--m);}
+.awning+.menu{margin-top:-48px;padding-top:178px}
+
+/* marquee */
+.marquee{background:var(--red);color:var(--cream);overflow:hidden;padding:20px 0;white-space:nowrap}
+.marquee .t{display:inline-flex;align-items:center;gap:36px;animation:mq 40s linear infinite;padding-right:36px}
+.marquee span{font-family:var(--serif);font-style:italic;font-size:clamp(1.4rem,2.6vw,2.2rem)}
+.marquee img{width:30px;height:30px;filter:brightness(0) invert(.95) sepia(.2)}
+@keyframes mq{to{transform:translateX(-100%)}}
+
+/* story */
+section{position:relative}
+.story{padding:140px 0 120px}
+.story-g>*,.fire-g>*,.res-g>*,.rev-g>*{min-width:0}
+.story-g{display:grid;grid-template-columns:1.05fr 1fr;gap:80px;align-items:center}
+.story p.lead{font-family:var(--serif);font-size:clamp(1.25rem,2vw,1.6rem);line-height:1.45;margin:28px 0 22px;color:var(--ink-2)}
+.story p{color:var(--muted);max-width:52ch}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:46px;border-top:1px solid var(--sand-3);padding-top:28px}
+.stats b{display:block;font-family:var(--serif);font-weight:400;font-size:2.4rem;line-height:1;color:var(--red)}
+.stats span{font-size:.78rem;color:var(--muted);letter-spacing:.04em}
+.collage{position:relative;height:640px}
+.collage figure{position:absolute;overflow:hidden;border-radius:240px 240px 18px 18px;box-shadow:0 30px 60px -30px rgba(60,30,20,.45)}
+.collage figure img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}
+.collage figure:hover img{transform:scale(1.06)}
+.collage .a{width:62%;height:82%;right:0;top:0}
+.collage .b{width:44%;height:52%;left:0;bottom:0;border-radius:18px;border:8px solid var(--sand)}
+.stamp{position:absolute;left:8%;top:6%;width:132px;height:132px;animation:spin 22s linear infinite;z-index:2}
+@keyframes spin{to{transform:rotate(360deg)}}
+.stamp text{font-family:var(--sans);font-size:9.4px;letter-spacing:3.2px;font-weight:700;fill:var(--red);text-transform:uppercase}
+
+/* signatures (pinned horizontal) */
+.sig{background:var(--ink);color:var(--cream)}
+.sig-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:70px}
+.sig-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:4vh}
+.sig-head .h2 em{color:#f0a98f}
+.sig-head p{max-width:340px;color:#bfb0a4;font-size:.95rem}
+.track{display:flex;gap:28px;padding-left:max(20px,(100vw - 1240px)/2);will-change:transform}
+.card{flex:0 0 clamp(240px,min(30vw,42vh),420px);position:relative}
+.card .ph{aspect-ratio:4/5;border-radius:220px 220px 16px 16px;overflow:hidden;background:var(--sand-3)}
+.card .ph img{width:100%;height:100%;object-fit:cover;transform:scale(1.25);transition:transform 1.2s var(--ease)}
+.card:hover .ph img{transform:scale(1.33)}
+.card .badge{position:absolute;top:18px;left:50%;transform:translateX(-50%);background:var(--cream);color:var(--red);font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.45em 1em;border-radius:99px;white-space:nowrap}
+.card h3{font-family:var(--serif);font-weight:400;font-size:1.7rem;margin-top:20px;display:flex;justify-content:space-between;gap:12px}
+.card h3 small{font-family:var(--sans);font-size:.95rem;color:#f0a98f;font-weight:600;white-space:nowrap;padding-top:.5em}
+.card p{color:#bfb0a4;font-size:.9rem;margin-top:6px}
+.progress{height:2px;background:rgba(255,255,255,.12);margin-top:4vh;position:relative}
+.progress i{position:absolute;inset:0;background:#f0a98f;transform-origin:left;transform:scaleX(0)}
+
+/* pierrade */
+.fire{background:var(--red-deep);color:var(--cream);padding:130px 0;overflow:hidden}
+.fire-g{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.fire .ph{border-radius:20px;overflow:hidden;aspect-ratio:3/2.4;position:relative}
+.fire .ph img{width:100%;height:100%;object-fit:cover}
+.fire .h2 em{color:#f6c7a6}
+.fire p{color:#ecd7c9;margin:22px 0 30px;max-width:48ch}
+.sauces{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:34px}
+.sauces span{border:1px solid rgba(255,255,255,.3);border-radius:99px;padding:.45em 1em;font-size:.82rem}
+.cuts{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(255,255,255,.2)}
+.cuts div{padding:18px 0}
+.cuts b{display:block;font-family:var(--serif);font-weight:400;font-size:1.25rem}
+.cuts span{font-size:.85rem;color:#f6c7a6}
+.sizzle{position:absolute;left:18px;bottom:18px;background:rgba(20,14,11,.7);backdrop-filter:blur(8px);border-radius:99px;padding:.5em 1.1em;font-size:.8rem;display:flex;gap:8px;align-items:center}
+
+/* menu */
+.menu{padding:130px 0;background:var(--cream)}
+.menu-top{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:40px}
+.tabs{display:flex;gap:6px;background:var(--sand);padding:6px;border-radius:99px}
+.tabs button{border:0;background:none;padding:.75em 1.5em;border-radius:99px;font-weight:600;font-size:.88rem;color:var(--muted);transition:background .3s,color .3s}
+.tabs button[aria-selected=true]{background:var(--red);color:#fff}
+.menu-bar{display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-bottom:34px;position:sticky;top:76px;z-index:5;background:var(--cream);padding:12px 0;border-bottom:1px solid var(--sand-2)}
+.chips{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;flex:1}
+.chips::-webkit-scrollbar{display:none}
+.chips button{flex:none;border:1px solid var(--sand-3);background:transparent;border-radius:99px;padding:.5em 1.1em;font-size:.82rem;font-weight:600;color:var(--ink-2);transition:all .3s}
+.chips button.on{background:var(--ink);color:var(--cream);border-color:var(--ink)}
+.search{position:relative}
+.search input{border:1px solid var(--sand-3);background:#fff;border-radius:99px;padding:.65em 1.1em .65em 2.4em;font:inherit;font-size:.88rem;width:220px}
+.search svg{position:absolute;left:.9em;top:50%;transform:translateY(-50%);width:16px;opacity:.5}
+.cat-h{font-family:var(--serif);font-weight:400;font-size:2rem;margin:48px 0 20px;display:flex;align-items:baseline;gap:14px}
+.cat-h:first-child{margin-top:0}
+.cat-h small{font-family:var(--sans);font-size:.78rem;color:var(--muted);letter-spacing:.08em}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:22px}
+.dish{background:#fff;border-radius:16px;overflow:hidden;cursor:pointer;border:0;text-align:left;color:inherit;display:flex;flex-direction:column;transition:transform .4s var(--ease),box-shadow .4s;animation:pop .5s var(--ease) both}
+.dish:hover{transform:translateY(-4px);box-shadow:0 22px 40px -24px rgba(60,30,20,.4)}
+@keyframes pop{from{opacity:0;transform:translateY(12px)}}
+.dish .im{aspect-ratio:3/2;overflow:hidden;background:var(--sand-2)}
+.dish .im img{width:100%;height:100%;object-fit:cover;transform:scale(1.08);transition:transform .8s var(--ease)}
+.dish:hover .im img{transform:scale(1.16)}
+.dish .tx{padding:16px 18px 18px;display:flex;flex-direction:column;gap:4px;flex:1}
+.dish .row{display:flex;justify-content:space-between;gap:12px;align-items:baseline}
+.dish h4{font-family:var(--serif);font-weight:500;font-size:1.12rem;line-height:1.25}
+.dish .pr{font-weight:700;color:var(--red);white-space:nowrap;font-size:.95rem}
+.dish p{font-size:.84rem;color:var(--muted);line-height:1.5}
+.dish .cal{font-size:.72rem;color:#a28f83;margin-top:auto;padding-top:6px}
+.lines{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:0 40px}
+.line{display:flex;align-items:baseline;gap:10px;padding:14px 0;border-bottom:1px dashed var(--sand-3)}
+.line b{font-family:var(--serif);font-weight:500}
+.line i{flex:1;border-bottom:1px dotted var(--sand-3);transform:translateY(-4px)}
+.line span{color:var(--red);font-weight:700;font-size:.9rem}
+.line small{display:block;color:var(--muted);font-size:.78rem}
+.empty{padding:40px;text-align:center;color:var(--muted)}
+.note{font-size:.78rem;color:var(--muted);margin-top:34px}
+
+/* gallery */
+.gal{padding:130px 0;background:var(--sand)}
+.gal-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:46px;flex-wrap:wrap}
+.gal-head p{max-width:380px;color:var(--muted)}
+.mason{columns:4 260px;column-gap:18px}
+.mason button{display:block;width:100%;margin-bottom:18px;border:0;padding:0;border-radius:14px;overflow:hidden;background:var(--sand-2);break-inside:avoid}
+.mason img{width:100%;transition:transform 1s var(--ease),filter .6s}
+.mason button:hover img{transform:scale(1.05)}
+
+/* reviews */
+.rev{padding:130px 0;background:var(--sage);color:var(--ink);overflow:hidden}
+.rev-g{display:grid;grid-template-columns:340px 1fr;gap:70px}
+.score b{font-family:var(--serif);font-weight:300;font-size:7rem;line-height:.9;display:block}
+.stars{color:var(--red);letter-spacing:4px;font-size:1.2rem}
+.bars{margin:28px 0}
+.bars div{display:grid;grid-template-columns:16px 1fr 46px;gap:10px;align-items:center;font-size:.8rem;margin:6px 0}
+.bars i{height:6px;border-radius:6px;background:rgba(30,25,22,.12);position:relative;overflow:hidden}
+.bars i::after{content:"";position:absolute;inset:0;width:var(--w);background:var(--ink);border-radius:6px;transform:scaleX(0);transform-origin:left;transition:transform 1.4s var(--ease)}
+.in .bars i::after,.bars.in i::after{transform:scaleX(1)}
+.topics{display:flex;flex-wrap:wrap;gap:8px}
+.topics span{background:rgba(255,255,255,.45);border-radius:99px;padding:.4em .95em;font-size:.78rem;font-weight:600}
+.rv-wrap{position:relative}
+.rv-track{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:6px}
+.rv-track::-webkit-scrollbar{display:none}
+.rv{flex:0 0 min(460px,85%);scroll-snap-align:start;background:var(--cream);border-radius:20px;padding:34px;display:flex;flex-direction:column;gap:18px}
+.rv q{font-family:var(--serif);font-size:1.15rem;line-height:1.5;quotes:"“" "”"}
+.rv .who{display:flex;align-items:center;gap:12px;margin-top:auto;font-size:.85rem}
+.rv .av{width:42px;height:42px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;font-weight:700}
+.rv .who small{display:block;color:var(--muted)}
+.rv .own{border-left:2px solid var(--red);padding-left:12px;font-size:.82rem;color:var(--muted)}
+.rv-nav{display:flex;gap:10px;margin-top:26px}
+.rv-nav button{width:52px;height:52px;border-radius:50%;border:1px solid var(--ink);background:none;font-size:1.2rem;transition:background .3s,color .3s}
+.rv-nav button:hover{background:var(--ink);color:var(--cream)}
+
+/* reserve + visit */
+.res{padding:130px 0;background:var(--ink);color:var(--cream)}
+.res-g{display:grid;grid-template-columns:1fr 1fr;gap:70px}
+.res .h2 em{color:#f0a98f}
+.res p.sub{color:#bfb0a4;margin:20px 0 34px;max-width:44ch}
+form{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+form label{display:flex;flex-direction:column;gap:6px;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:#bfb0a4;font-weight:600}
+form .full{grid-column:1/-1}
+form input,form select,form textarea{background:transparent;border:1px solid rgba(255,255,255,.22);border-radius:12px;padding:.9em 1em;color:var(--cream);font:inherit;font-size:.95rem;text-transform:none;letter-spacing:0;color-scheme:dark}
+form input:focus,form select:focus,form textarea:focus{outline:none;border-color:#f0a98f}
+form select option{color:var(--ink)}
+.seg{display:flex;gap:8px}
+.seg label{flex:1;flex-direction:row;cursor:pointer}
+.seg input{position:absolute;opacity:0;pointer-events:none}
+.seg span{flex:1;text-align:center;border:1px solid rgba(255,255,255,.22);border-radius:12px;padding:.85em;font-size:.88rem;text-transform:none;letter-spacing:0;color:var(--cream);transition:all .3s}
+.seg input:checked+span{background:var(--cream);color:var(--ink);border-color:var(--cream)}
+.seg input:focus-visible+span{outline:2px solid #f0a98f;outline-offset:2px}
+form .btn{justify-content:center;border:0}
+.err{color:#f6a28c;font-size:.82rem;min-height:1.2em}
+.visit{display:flex;flex-direction:column;gap:22px}
+.map{border-radius:18px;overflow:hidden;aspect-ratio:16/10;background:var(--ink-2)}
+.map iframe{width:100%;height:100%;border:0;filter:grayscale(.3) contrast(1.05)}
+.hours{width:100%;border-collapse:collapse;font-size:.92rem}
+.hours td{padding:9px 0;border-bottom:1px solid rgba(255,255,255,.1)}
+.hours td:last-child{text-align:right;color:#bfb0a4}
+.hours tr.today td{color:#f0a98f;font-weight:700}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:16px;font-size:.9rem}
+.contact small{display:block;color:#8f8076;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:2px}
+.contact a{text-decoration:none}
+.contact a:hover{color:#f0a98f}
+
+footer{background:var(--red);color:var(--cream);padding:90px 0 40px;overflow:hidden}
+.foot-logo{width:100%;max-width:1100px;margin:0 auto 50px;filter:brightness(0) invert(.95) sepia(.25)}
+.foot{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;font-size:.85rem;border-top:1px solid rgba(255,255,255,.25);padding-top:26px}
+.foot a{text-decoration:none;margin-right:18px}
+.foot a:hover{text-decoration:underline}
+
+/* dialogs */
+dialog{border:0;padding:0;background:transparent;max-width:none;max-height:none;margin:auto}
+dialog::backdrop{background:rgba(20,14,11,.7);backdrop-filter:blur(6px)}
+.dm{width:min(860px,94vw);background:var(--cream);border-radius:22px;overflow:hidden;display:grid;grid-template-columns:1.1fr 1fr;animation:pop .45s var(--ease)}
+.dm .im{background:var(--sand-2);min-height:320px}
+.dm .im img{width:100%;height:100%;object-fit:cover}
+.dm .tx{padding:44px 38px;display:flex;flex-direction:column;gap:14px;position:relative}
+.dm h3{font-family:var(--serif);font-weight:400;font-size:2.2rem;line-height:1.05}
+.dm .pr{font-size:1.4rem;color:var(--red);font-weight:700}
+.dm p{color:var(--muted)}
+.x{position:absolute;top:14px;right:14px;width:44px;height:44px;border-radius:50%;border:0;background:rgba(30,25,22,.08);font-size:1.4rem;line-height:1}
+.lb{position:relative}
+.lb img{max-width:92vw;max-height:86vh;border-radius:12px}
+.lb .x{background:var(--cream);top:-16px;right:-16px}
+.lb .cap{color:#e9dccf;text-align:center;font-size:.8rem;margin-top:10px}
+
+.fab{display:none}
+.r{opacity:0;transform:translateY(40px);transition:opacity 1.1s var(--ease),transform 1.1s var(--ease)}
+.r.in{opacity:1;transform:none}
+.r.d1{transition-delay:.1s}.r.d2{transition-delay:.2s}.r.d3{transition-delay:.3s}
+html{scroll-padding-top:70px}
+
+/* grain */
+.grain{position:fixed;inset:-50%;z-index:90;pointer-events:none;opacity:.07;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");animation:grain 1s steps(4) infinite}
+@keyframes grain{25%{transform:translate(-3%,2%)}50%{transform:translate(2%,-3%)}75%{transform:translate(-1%,-2%)}}
+
+/* palm shadows (like the light in Mimosa's own food photography) */
+[data-palm]{overflow:clip}
+.palm{position:absolute;pointer-events:none;width:min(820px,90vw);opacity:.13;mix-blend-mode:multiply;filter:blur(5px);transform-origin:0 50%;animation:sway 9s ease-in-out infinite alternate;z-index:0}
+.palm.tl{top:-60px;left:-80px;transform:rotate(18deg)}
+.palm.tr{top:-40px;right:-120px;transform-origin:100% 50%;animation-name:sway2}
+@keyframes sway{from{rotate:-2deg}to{rotate:3deg}}
+@keyframes sway2{from{rotate:2deg}to{rotate:-3deg}}
+[data-palm]>.wrap{position:relative;z-index:1}
+
+/* clip reveal */
+/* the clip sits on the img: a fully clipped observed element never reports as intersecting */
+.clip img{clip-path:inset(100% 0 0 0);transform:scale(1.25);transition:clip-path 1.4s var(--ease),transform 1.8s var(--ease)}
+.clip.in img{clip-path:inset(0 0 0 0);transform:scale(1)}
+.collage figure.clip:not(.in){box-shadow:none;border-color:transparent}
+
+/* cursor */
+.cur{position:fixed;left:0;top:0;z-index:95;pointer-events:none;width:12px;height:12px;margin:-6px 0 0 -6px;border-radius:50%;background:var(--red);display:grid;place-items:center;color:#fff;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;transition:width .4s var(--ease),height .4s var(--ease),margin .4s var(--ease),background .3s,opacity .3s;opacity:0}
+.cur span{opacity:0;transition:opacity .2s}
+.cur.big{width:84px;height:84px;margin:-42px 0 0 -42px;background:rgba(171,72,58,.92)}
+.cur.big span{opacity:1}
+.cur.on{opacity:1}
+@media (pointer:fine){.has-cur,.has-cur *{cursor:none!important}}
+
+/* statement */
+.state{padding:150px 0;background:var(--sand)}
+.state p{font-family:var(--serif);font-weight:300;font-size:clamp(1.9rem,4.6vw,4.1rem);line-height:1.18;letter-spacing:-.02em;max-width:20ch;margin:auto;text-align:center}
+.state .w{opacity:.32;transition:opacity .35s}
+.state .w.lit{opacity:1}
+.state em{font-style:italic;color:var(--red)}
+.pill{display:inline-block;width:1.9em;height:.95em;border-radius:99px;overflow:hidden;vertical-align:middle;margin:0 .12em;transform:scale(.4);opacity:.2;transition:transform .7s var(--ease),opacity .5s}
+.pill.lit{transform:none;opacity:1}
+.pill img{width:100%;height:100%;object-fit:cover}
+
+/* expanding terrace */
+.expand{height:260vh;background:var(--sand)}
+.ex-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:grid;place-items:center}
+.ex-fig{position:absolute;inset:0;clip-path:inset(var(--iy,30%) var(--ix,32%) round var(--rr,300px));will-change:clip-path}
+.ex-fig img{width:100%;height:100%;object-fit:cover;transform:scale(var(--sc,1.3))}
+.ex-fig::after{content:"";position:absolute;inset:0;background:rgba(20,14,11,var(--dk,0))}
+.ex-txt{position:relative;z-index:2;text-align:center;color:#fff;opacity:var(--to,0);transform:translateY(calc((1 - var(--to,0)) * 40px))}
+.ex-txt h2{font-family:var(--serif);font-weight:300;font-size:clamp(2.8rem,8vw,7.5rem);line-height:.95;letter-spacing:-.03em}
+.ex-txt h2 em{color:#f6c7a6}
+.ex-txt p{margin-top:18px;color:#f1e6dc}
+.ex-fig{z-index:1}.ex-txt{z-index:2}
+.ex-side{position:absolute;z-index:0;font-family:var(--serif);font-style:italic;font-size:clamp(1.4rem,3vw,2.6rem);color:var(--red)}
+.ex-side.l{left:5vw;top:18vh}.ex-side.r2{right:5vw;bottom:18vh}
+
+/* instagram lanes */
+.insta{background:var(--ink);color:var(--cream);padding:130px 0 120px;overflow:hidden}
+.insta-head{text-align:center;margin-bottom:60px}
+.insta-head .h2 em{color:#f0a98f}
+.insta-head a{margin-top:28px}
+.lane{display:flex;gap:18px;width:max-content;margin-bottom:18px;will-change:transform}
+.lane img{width:clamp(200px,22vw,320px);aspect-ratio:1;object-fit:cover;border-radius:14px;transform:scale(1.15)}
+.lane figure{overflow:hidden;border-radius:14px;flex:none}
+.lanes{transform:rotate(-4deg);margin:0 -5vw}
+
+/* hero extras */
+.slides{transition:transform .9s var(--ease)}
+.scroll-cue{position:absolute;left:50%;bottom:22px;z-index:3;width:1px;height:56px;background:rgba(255,255,255,.3);overflow:hidden}
+.scroll-cue::after{content:"";position:absolute;left:0;top:-50%;width:1px;height:50%;background:#fff;animation:cue 1.8s var(--ease) infinite}
+@keyframes cue{to{top:100%}}
+.hero h1 .ch{display:inline-block;transition:transform .5s var(--ease)}
+.hero h1:hover .ch{transform:translateY(-.04em)}
+
+@media (max-width:980px){
+  .nav ul,.nav .status,.nav-r .btn{display:none}
+  .burger{display:block}
+  .story-g,.fire-g,.res-g,.rev-g{grid-template-columns:1fr;gap:50px}
+  .collage{height:520px}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .sig-pin{position:relative;height:auto;padding:110px 0}
+  .track{overflow-x:auto;scroll-snap-type:x mandatory;padding-right:20px;scrollbar-width:none;transform:none!important}
+  .track::-webkit-scrollbar{display:none}
+  .card{scroll-snap-align:center;flex-basis:78vw}
+  .progress{display:none}
+  .sig{height:auto!important}
+  .dm{grid-template-columns:1fr;max-height:90vh;overflow:auto}
+  .dm .im{min-height:0;aspect-ratio:3/2}
+  .fab{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:40;gap:8px;transform:translateY(120%);transition:transform .5s var(--ease)}
+  .fab.on{transform:none}
+  .fab a{flex:1;justify-content:center;box-shadow:0 10px 30px -10px rgba(0,0,0,.5)}
+  .fab .btn-ghost{background:var(--ink);border-color:var(--ink)}
+  .dots{display:none}
+}
+@media (max-width:600px){
+  .wrap{width:calc(100% - 32px)}
+  .hero-meta{gap:22px}
+  .hero-meta b{font-size:1.5rem}
+  .menu-bar{top:68px}
+  .search input{width:100%}
+  .search{width:100%}
+  form{grid-template-columns:1fr}
+  .contact{grid-template-columns:1fr}
+  .cuts{grid-template-columns:1fr}
+  .stamp{width:100px;height:100px}
+  .story,.menu,.gal,.rev,.res,.fire{padding:90px 0}
+  .nav-in{height:68px}
+  .tabs{width:100%}.tabs button{flex:1;padding:.75em .5em}
+  .shot-cap{display:none}
+  .state{padding:110px 0}
+  .awning+.menu{padding-top:130px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .r,.fade-up{opacity:1;transform:none}
+  .hero h1 .ln>span{transform:none}
+  .clip img{clip-path:none;transform:none}
+  .state .w,.pill{opacity:1;transform:none}
+  .slides img.on{transform:scale(1.05)}
+  .grain{display:none}
+}
+</style>
+</head>
+<body>
+<div class="loader" id="loader"><img src="img/logo-red.svg" alt="Mimosa"></div>
+
+<div class="credit">Sample website for Mimosa · Designed by Saqlain Rizwan · <a href="https://www.srstack.net" target="_blank" rel="noopener">www.srstack.net</a></div>
+
+<nav class="nav" id="nav" aria-label="Main">
+  <div class="wrap nav-in">
+    <a href="#top" aria-label="Mimosa home"><img class="logo logo-beige" src="img/logo-beige.svg" alt="Mimosa"><img class="logo logo-red" src="img/logo-red.svg" alt=""></a>
+    <ul>
+      <li><a href="#story">Story</a></li>
+      <li><a href="#signatures">Signatures</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#gallery">Terrace</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+    <div class="nav-r">
+      <span class="status"><i class="dot" id="dot"></i><span id="statusTxt">Checking hours…</span></span>
+      <a class="btn btn-red" href="#reserve">Reserve</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<div class="mnav" id="mnav" aria-hidden="true">
+  <button class="close" id="mclose" aria-label="Close menu">×</button>
+  <a href="#story">Story</a><a href="#signatures">Signatures</a><a href="#menu">Menu</a><a href="#gallery">Terrace</a><a href="#reviews">Reviews</a><a href="#reserve">Reserve</a><a href="#visit">Visit</a>
+</div>
+
+<header class="hero" id="top">
+  <div class="stage"><div class="slides" id="slides">
+    <img style="--cam:cam1" src="img/g/g2.webp" alt="Mimosa dining room under the striped Riviera ceiling" data-cap="The dining room">
+    <img style="--cam:cam2" src="img/g/g13.webp" alt="Candle-lit terrace tables at night" data-cap="The terrace">
+    <img style="--cam:cam3" src="img/g/g1.webp" alt="Mimosa façade at Cascade, Jeddah Walk" data-cap="Jeddah Walk">
+    <img style="--cam:cam4" src="img/g/g11.webp" alt="Lounge terrace overlooking Jeddah at night" data-cap="After dark">
+    <img style="--cam:cam2" src="img/g/g6.webp" alt="Sage-green banquettes along the glass wall" data-cap="The banquettes">
+  </div></div>
+  <div class="leak" id="leak"></div>
+  <canvas id="dust" aria-hidden="true"></canvas>
+  <div class="shot-cap" aria-hidden="true"><b id="capN">01</b><i id="capBar"></i><span id="capT">The dining room</span></div>
+  <div class="dots" id="dots" aria-label="Slides"></div>
+  <div class="scroll-cue" aria-hidden="true"></div>
+  <div class="wrap hero-c">
+    <p class="eyebrow fade-up" style="color:#f6c7a6">Mediterranean Steakhouse · Jeddah Walk</p>
+    <h1><span class="ln"><span>The Riviera,</span></span><span class="ln"><span><em>by the</em></span></span><span class="ln"><span>Red Sea.</span></span></h1>
+    <div class="hero-sub">
+      <div class="fade-up">
+        <p>Coastal flavours, fire-kissed steaks and refined simplicity — served under striped awnings in the heart of Jeddah.</p>
+        <div class="ctas"><a class="btn btn-red" href="#reserve">Reserve a table</a><a class="btn btn-ghost" href="#menu">Explore the menu</a></div>
+      </div>
+      <div class="hero-meta fade-up">
+        <div><b>4.8★</b>3,404 Google reviews</div>
+        <div><b>1 PM</b>Open daily till late</div>
+        <div><b>Cascade</b>Jeddah Walk</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="marquee" aria-hidden="true"><div class="t" id="mq"></div></div>
+
+<section class="story" id="story" data-palm="tr">
+  <div class="wrap story-g">
+    <div>
+      <p class="eyebrow r">Our story</p>
+      <h2 class="h2 r d1">Charm of the <em>French Riviera</em>, spirit of the Red Sea.</h2>
+      <p class="lead r d2">A modern Mediterranean steakhouse celebrating coastal flavours, fresh ingredients and refined simplicity.</p>
+      <p class="r d2">Born from a Parisian concept, Mimosa brings sun-washed Mediterranean dining to Cascade at Jeddah Walk — hand-painted plates, sage banquettes, a garden terrace lit by candlelight, and a grill that knows exactly what it's doing. Lunch lingers into dinner; dinner lingers into the night.</p>
+      <div class="stats r d3">
+        <div><b data-count="4.8" data-dec="1">0</b><span>Google rating</span></div>
+        <div><b data-count="3404">0</b><span>Guest reviews</span></div>
+        <div><b data-count="1297">0</b><span>Guest photos</span></div>
+        <div><b data-count="12">0</b><span>Hours a day</span></div>
+      </div>
+    </div>
+    <div class="collage r d1">
+      <svg class="stamp" viewBox="0 0 120 120" aria-hidden="true"><defs><path id="c" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs><text><textPath href="#c">Mimosa · Jeddah · Riviera · Grill ·</textPath></text><image href="img/flower.svg" x="38" y="38" width="44" height="44"/></svg>
+      <figure class="a clip"><img src="img/g/g2.webp" alt="Interior with striped ceiling and olive tree" loading="lazy"></figure>
+      <figure class="b clip"><img src="img/g/g10.webp" alt="Mimosa's mint Vespa against the logo wall" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="state" data-palm="tl" aria-label="Mimosa in a sentence">
+  <div class="wrap"><p id="stmt"></p></div>
+</section>
+
+<section class="sig" id="signatures">
+  <div class="sig-pin">
+    <div class="wrap sig-head">
+      <div><p class="eyebrow" style="color:#f0a98f">Signatures</p><h2 class="h2">What Jeddah <em>keeps ordering</em></h2></div>
+      <p>The dishes guests mention most in their Google reviews — and a few the kitchen is quietly proud of.</p>
+    </div>
+    <div class="track" id="track"></div>
+    <div class="wrap"><div class="progress"><i id="prog"></i></div></div>
+  </div>
+</section>
+
+<section class="fire">
+  <div class="wrap fire-g">
+    <div class="ph clip"><img src="img/m/pierrade.webp" alt="Pierrade de boeuf on a hot stone with sauces" loading="lazy"><span class="sizzle">🔥 Cooked live at your table</span></div>
+    <div>
+      <p class="eyebrow r" style="color:#f6c7a6">From the fire, with finesse</p>
+      <h2 class="h2 r d1">Pierrade <em>de boeuf</em></h2>
+      <p class="r d2">220g of premium beef served raw on a hot stone, cooked exactly how you like it — right at the table. Comes with bread, French fries and four sauces.</p>
+      <div class="sauces r d2"><span>Béarnaise</span><span>Truffle mayo</span><span>Mustard</span><span>Cocktail</span></div>
+      <div class="cuts r d3">
+        <div><b>Côte de Boeuf</b><span>SAR 689 · to share</span></div>
+        <div><b>Ribeye</b><span>SAR 248</span></div>
+        <div><b>Tenderloin</b><span>SAR 240</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="awning" aria-hidden="true"></div>
+
+<section class="menu" id="menu" data-palm="tr">
+  <div class="wrap">
+    <div class="menu-top">
+      <div><p class="eyebrow r">The menu</p><h2 class="h2 r d1">Sun on the <em>plate</em></h2></div>
+      <div class="tabs" role="tablist" id="tabs">
+        <button role="tab" aria-selected="true" data-t="food">Food</button>
+        <button role="tab" aria-selected="false" data-t="dessert">Desserts</button>
+        <button role="tab" aria-selected="false" data-t="drinks">Drinks</button>
+      </div>
+    </div>
+    <div class="menu-bar">
+      <div class="chips" id="chips"></div>
+      <label class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="q" type="search" placeholder="Search dishes…" aria-label="Search the menu"></label>
+    </div>
+    <div id="menuOut"></div>
+    <p class="note">Prices in Saudi Riyals (SAR). Calories shown per serving. Taken from Mimosa's official digital menu — please ask your server about allergens.</p>
+  </div>
+</section>
+
+<section class="expand" id="terrace" aria-label="The terrace">
+  <div class="ex-pin">
+    <span class="ex-side l" aria-hidden="true">golden hour,</span>
+    <span class="ex-side r2" aria-hidden="true">every hour.</span>
+    <figure class="ex-fig"><img src="img/g/g13.webp" alt="Mimosa's candle-lit terrace at night" loading="lazy"></figure>
+    <div class="ex-txt"><h2>Dinner under<br><em>the palms</em></h2><p>Terrace seating every evening · Cascade, Jeddah Walk</p></div>
+  </div>
+</section>
+
+<section class="gal" id="gallery" data-palm="tl">
+  <div class="wrap">
+    <div class="gal-head">
+      <div><p class="eyebrow r">The terrace &amp; the room</p><h2 class="h2 r d1">Stay for the <em>golden hour</em></h2></div>
+      <p class="r d2">Striped ceilings, olive trees, sage banquettes and a candle-lit terrace with the city glittering beyond. Photos shared by Mimosa's guests on Google.</p>
+    </div>
+    <div class="mason" id="mason"></div>
+  </div>
+</section>
+
+<section class="rev" id="reviews">
+  <div class="wrap rev-g">
+    <div class="r">
+      <p class="eyebrow" style="color:var(--ink)">Google reviews</p>
+      <div class="score"><b>4.8</b><span class="stars">★★★★★</span><div style="font-size:.85rem;margin-top:6px">from 3,404 reviews</div></div>
+      <div class="bars" id="bars">
+        <div>5<i style="--w:88.1%"></i><span>2,999</span></div>
+        <div>4<i style="--w:7%"></i><span>238</span></div>
+        <div>3<i style="--w:2.1%"></i><span>70</span></div>
+        <div>2<i style="--w:1.1%"></i><span>36</span></div>
+        <div>1<i style="--w:1.8%"></i><span>61</span></div>
+      </div>
+      <p style="font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px">Most mentioned</p>
+      <div class="topics"><span>Truffle risotto · 23</span><span>Kale salad · 21</span><span>Salmon tacos · 20</span><span>Outdoor seating</span></div>
+    </div>
+    <div class="rv-wrap r d1">
+      <h2 class="h2" style="margin-bottom:34px">Kind <em>words</em></h2>
+      <div class="rv-track" id="rvs"></div>
+      <div class="rv-nav"><button id="rvPrev" aria-label="Previous review">←</button><button id="rvNext" aria-label="Next review">→</button></div>
+    </div>
+  </div>
+</section>
+
+<section class="res" id="reserve">
+  <div class="wrap res-g">
+    <div>
+      <p class="eyebrow r" style="color:#f0a98f">Reservations</p>
+      <h2 class="h2 r d1">Save us a <em>seat</em></h2>
+      <p class="sub r d2">Tell us when you're coming — we'll confirm on WhatsApp. For parties of 10+ or private celebrations, just mention it in the note.</p>
+      <form id="form" class="r d2" novalidate>
+        <label class="full">Name<input name="name" autocomplete="name" required></label>
+        <label>Date<input name="date" type="date" required></label>
+        <label>Time<select name="time" required id="time"></select></label>
+        <label>Guests<select name="guests"><option>2</option><option>1</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10+</option></select></label>
+        <label>Occasion<select name="occasion"><option>Just dinner</option><option>Birthday</option><option>Anniversary</option><option>Business</option><option>Date night</option></select></label>
+        <div class="full seg" role="radiogroup" aria-label="Seating">
+          <label><input type="radio" name="seat" value="Indoor" checked><span>Indoor</span></label>
+          <label><input type="radio" name="seat" value="Terrace"><span>Terrace</span></label>
+          <label><input type="radio" name="seat" value="No preference"><span>Either</span></label>
+        </div>
+        <label class="full">Note (optional)<textarea name="note" rows="2"></textarea></label>
+        <p class="err full" id="err" role="alert"></p>
+        <button class="btn btn-red full" type="submit">Request on WhatsApp →</button>
+      </form>
+    </div>
+    <div class="visit" id="visit">
+      <div class="map r"><iframe title="Map to Mimosa Jeddah" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Mimosa+Jeddah+%D9%85%D9%8A%D9%85%D9%88%D8%B2%D8%A7+Cascade+Jeddah+Walk&output=embed"></iframe></div>
+      <table class="hours r d1" id="hours" aria-label="Opening hours"></table>
+      <div class="contact r d2">
+        <div><small>Address</small>Cascade at Jeddah Walk, Prince Mohammed Bin Abdulaziz St, Al Andalus, Jeddah 23322</div>
+        <div><small>Call / WhatsApp</small><a href="tel:+966543979744">+966 54 397 9744</a></div>
+        <div><small>Directions</small><a href="https://maps.app.goo.gl/CmEgxfHgCDwoTTsXA" target="_blank" rel="noopener">Open in Google Maps ↗</a></div>
+        <div><small>Follow</small><a href="https://www.instagram.com/mimosa.jeddah" target="_blank" rel="noopener">@mimosa.jeddah ↗</a></div>
+        <div><small>Good to know</small>Terrace seating · On-site parking · High chairs</div>
+        <div><small>Average spend</small>SAR 200+ per person</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="insta" aria-label="Instagram">
+  <div class="wrap insta-head">
+    <p class="eyebrow r" style="color:#f0a98f">@mimosa.jeddah</p>
+    <h2 class="h2 r d1">Shot on the <em>Riviera</em>,<br>served in Jeddah</h2>
+    <a class="btn btn-red r d2" href="https://www.instagram.com/mimosa.jeddah" target="_blank" rel="noopener">Follow on Instagram ↗</a>
+  </div>
+  <div class="lanes" aria-hidden="true"><div class="lane" id="lane1"></div><div class="lane" id="lane2"></div></div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <img class="foot-logo" src="img/logo-red.svg" alt="Mimosa">
+    <div class="foot">
+      <div><a href="#menu">Menu</a><a href="#reserve">Reserve</a><a href="#visit">Visit</a><a href="https://www.instagram.com/mimosa.jeddah" target="_blank" rel="noopener">Instagram</a></div>
+      <div>© Mimosa Jeddah · ميموزا جدة · Sample site by <a href="https://www.srstack.net" target="_blank" rel="noopener" style="margin:0">SR Stack</a></div>
+    </div>
+  </div>
+</footer>
+
+<div class="fab" id="fab"><a class="btn btn-ghost" href="tel:+966543979744">Call</a><a class="btn btn-red" href="#reserve">Reserve a table</a></div>
+
+<div class="grain" aria-hidden="true"></div>
+<div class="cur" id="cur" aria-hidden="true"><span></span></div>
+
+<dialog id="dlg"><div class="dm"><div class="im"><img id="dImg" alt=""></div><div class="tx"><button class="x" data-close aria-label="Close">×</button><p class="eyebrow" id="dCat"></p><h3 id="dName"></h3><p id="dDesc"></p><div class="pr" id="dPrice"></div><small id="dCal" style="color:var(--muted)"></small><a class="btn btn-red" href="#reserve" data-close style="align-self:flex-start;margin-top:10px">Reserve to try it</a></div></div></dialog>
+<dialog id="lb"><div class="lb"><button class="x" data-close aria-label="Close">×</button><img id="lbImg" alt=""><p class="cap">Guest photo · Google Maps</p></div></dialog>
+
+<script>
+const PH = 'img/m/';
+// [name, desc, price, cal, img]
+const MENU = {
+  food: {
+    'To Start With': [
+      ['Kimchi Kissed Tuna','Crispy homemade tortilla shells, avocado mousse, kimchi and red chili',64,575,'kimchi-tuna'],
+      ['Citrus Salmon Crunch','Crispy homemade tortilla shells, avocado mousse, kimchi',52,650,'salmon-crunch'],
+      ['Crispy Beef Taco','Crispy homemade tortilla shells, avocado mousse, sour cream and sriracha',68,730,'beef-taco'],
+      ['Salmon Tartar','Avocado tartar, dill, shallots, served with grilled French baguette',64,350,'salmon-tartar'],
+      ['Smoked Eggplant','Eggplant, capers, roasted bell pepper, pomegranate molasses, Parmesan curls, wild rocket, cherry tomato',54,720,'eggplant'],
+      ['Fried Shrimp Balls','Shrimp and crab meat, coriander, jalapeño, served with Ahi mayo',48,520,'shrimp-balls'],
+      ['Escargots','Herb butter and croutons',98,610,'escargots'],
+      ['Gourmet Trio','Mini burgers with cheddar, pickles, iceberg, caramelized onion and truffle mayo',68,850,'gourmet-trio'],
+      ['Mediterranean Yuzu Shrimp','Sautéed shrimp, baby spinach, cherry tomatoes and feta in yuzu tomato sauce',72,370,'yuzu-shrimp']],
+    'Baked With Soul': [
+      ['Truffle Pie','Mozzarella, Parmesan, truffle mayo with wild rocket',88,800,'truffle-pie'],
+      ['Pepperoni Pie','Mozzarella cheese, pepperoni',68,820,'pepperoni-pie'],
+      ['Greek Galette','Cherry tomatoes, Kalamata olives, spring onion, fresh oregano, mesclun and feta',68,850,'greek-galette']],
+    'Sunshine In A Bowl': [
+      ['Corn Kale','Crunchy kale, corn sauce, avocado, Granny Smith, dried cranberry, caramelized pecans',58,387,'corn-kale'],
+      ['Goat Cheese','Beetroot, chèvre, honey mustard sauce, topped with fig',62,512,'goat-cheese'],
+      ['Mediterranean Garden Salad','Feta, tomato confit, red onion, Kalamata olives, cucumber on creamy citrus',56,451,'garden-salad'],
+      ['Burrata Salad','Cherry & sundried tomatoes, rocket, Kalamata olives, croutons, pesto, balsamic glaze',72,641,'burrata'],
+      ['Watermelon Salad','Watermelon, melon, feta, basil, mint, balsamic glaze',58,390,'watermelon'],
+      ['Salade de Falafel Croquant','Cherry tomatoes, radish, mint, parsley, pomegranate, tahini-lemon dressing',48,816,'falafel-salad']],
+    'Pasta & Risotto': [
+      ['Mimosa Signature Lasagna','Slow-cooked beef, creamy mozzarella topping',84,700,'lasagna'],
+      ['Gnocchi Pesto','Homemade gnocchi with basil pesto, Parmesan',88,1024,'gnocchi'],
+      ['Truffle Risotto','Camembert, truffle, Parmesan',88,834,'truffle-risotto'],
+      ['Shrimp Risotto','Zucchini, lemon zest, Parmesan',84,885,'shrimp-risotto']],
+    'From The Fire': [
+      ['Côte de Boeuf','Served with one side dish and peppercorn sauce',689,2550,'cote-de-boeuf'],
+      ['Ribeye','Served with one side dish and sauce of your choice',248,963,'ribeye'],
+      ['Beef Tenderloin','Served with one side dish and sauce of your choice',240,713,'tenderloin'],
+      ['Lamb Chops','Marinated in-house with fresh herbs and aromatic spices',148,650,'lamb-chops'],
+      ['Braised Beef Short Ribs','Rocket and shaved Parmesan salad, tarragon sauce',158,1580,'short-ribs'],
+      ['Grilled Salmon','Fennel, asparagus & citrus sauce',119,751,'salmon'],
+      ['Grilled Seabass','Char-grilled, with creamy mash, ratatouille and lemon butter sauce',129,1356,'seabass'],
+      ['Grilled Lemon Chicken','Roasted baby potatoes with creamy mushroom sauce',98,1150,'lemon-chicken'],
+      ['Steak & Frites','220g steak, butter herb sauce and golden fries',108,1760,'steak-frites'],
+      ['Pierrade de Boeuf','220g premium beef on a hot stone, cooked live at the table. With bread, fries and four sauces',134,1100,'pierrade']],
+    'Sides': [
+      ['Truffle French Fries','',42,1035,'truffle-fries'],['Potato Gratin','With truffle',42,498,'gratin'],
+      ['French Fries','',32,701],['Mashed Potatoes','',32,339],['Ratatouille','',28,90],['Sautéed Mushrooms','',36,249],['Sautéed Spinach','',28,115]],
+    'Add On': [
+      ['Béarnaise Sauce','',18],['Peppercorn Sauce','',18],['Butter Herb Sauce','',18],['Mushroom Sauce','',18],['Truffle Mayo','',18],['Grilled Shrimp','',30],['Chicken Breast','',30]]
+  },
+  dessert: {
+    'Desserts': [
+      ['Chocolate Raspberry','56% chocolate mousse, raspberry jam',58,0,'choc-raspberry'],
+      ['Molten Cake','72% dark chocolate molten cake with a delicate hint of coffee',48,0,'molten-cake'],
+      ['San Sebastian','Basque burnt cheesecake',48,0,'san-sebastian'],
+      ['Chocolate Fruit Dip','Warm chocolate fondue with fresh fruit',58,0,'fruit-dip'],
+      ['Berry Bliss Cake','',58,0,'berry-bliss'],
+      ['Frosted Trio','Chocolate, vanilla, strawberry',54,0,'frosted-trio']]
+  },
+  drinks: {
+    'Signature Mocktails': [
+      ['Mimosa','Mango, peach and orange with a lemon twist',49,0,'mimosa-drink'],
+      ['Riviera','Citrus and apricot, non-alcoholic spiced rum, fresh rosemary',49,0,'riviera'],
+      ['Paloma','Zesty grapefruit and lemon, agave, salted rim',49,0,'paloma'],
+      ['Passion Fruit Martini','Passion fruit, orange, lemon with vanilla',54,0,'passion-martini'],
+      ['Penicillin','Lemon and honey-ginger with a hint of non-alcoholic gin',54,0,'penicillin'],
+      ['Mix Berry Mojito','Berries, lemon, mint and soda',49,0,'berry-mojito'],
+      ['Sangria','Fruit sangria with a hint of cinnamon',49,0,'sangria'],
+      ['Passion Fruit Mojito','Passion fruit, lemon, mint and soda',54],['Peach Mojito','Peach, lemon, mint and soda',49]],
+    'Alcohol-free Bubbles': [['Night Orient “Rosé”','Sparkling, Tempranillo-based',250],['Night Orient “Chardonnay”','',250],['Night Orient “Merlot”','',250],['Asahi 350ml','',44]],
+    'Coffee': [['Café Latte','',33,0,'latte'],['Espresso','',29],['Double Espresso','',33],['Americano','',33],['Cappuccino','',33],['Cortado','',33],['Flat White','',33],['Macchiato','',33],['Turkish Coffee','',28],['Iced Americano','',33],['Iced Latte','',36]],
+    'Tea': [['Chamomile','',35],['Earl Grey','',35],['English Breakfast','',35],['Jasmine Green Tea','',35],['Canarino','',35],['Lemon Iced Tea','',32],['Peach Iced Tea','',32]],
+    'Fresh Juices': [['Orange Juice','',39],['Apple Juice','',39],['Carrot Juice','',37],['Minted Lemonade','',39]],
+    'Soft Drinks & Water': [['Pepsi / Diet','',21],['7UP / Zero','',21],['Mirinda','',21],['Ginger Ale','',29],['Natural Water S / L','',18],['Sparkling Water S / L','',18]]
+  }
+};
+
+const SIGS = [
+  ['truffle-risotto','Truffle Risotto','Camembert, truffle, Parmesan',88,'Mentioned in 23 reviews'],
+  ['kimchi-tuna','Kimchi Kissed Tuna','Crispy tortilla shells, avocado mousse, kimchi',64,'Guest favourite'],
+  ['salmon-crunch','Citrus Salmon Crunch','Salmon tacos in crisp tortilla shells, avocado mousse',52,'Mentioned in 20 reviews'],
+  ['corn-kale','Corn Kale','Kale, corn sauce, avocado, caramelized pecans',58,'Mentioned in 21 reviews'],
+  ['cote-de-boeuf','Côte de Boeuf','For the table, with peppercorn sauce',689,'From the fire'],
+  ['burrata','Burrata Salad','Sundried tomato, pesto, balsamic',72,'Fresh from the garden'],
+  ['choc-raspberry','Chocolate Raspberry','56% chocolate mousse, raspberry jam',58,'The perfect ending'],
+  ['mimosa-drink','The Mimosa','Mango, peach & orange, lemon twist',49,'House signature']
+];
+
+const REVIEWS = [
+  ['Ahmed Alhaddad','Local Guide · 2 months ago','Mimosa has a beautiful atmosphere with a stylish interior and a lovely patio… The standout dish for me was the Tuna Tacos — absolutely delicious. The Truffle Risotto was another highlight and genuinely exceeded my expectations.','We’re truly happy you enjoyed your experience at Mimosa 🌼'],
+  ['hossam gazzaz','Local Guide · 3 months ago','The atmosphere is elegant, cozy, and perfect for a relaxing dinner… the truffle fries were crispy and flavorful, the risotto was rich and creamy. Definitely one of the best dining experiences I’ve had in Jeddah.',''],
+  ['Alinko','Local Guide · 4 months ago','We went to Mimosa for a birthday dinner celebration, and what a beautiful spot it is to dine. The ambiance and vibes were superb, the music mellow, and the service attentive, professional, and perfect.','We’re truly happy you enjoyed your experience at Mimosa 🌼'],
+  ['fatma','Local Guide · a month ago','Amazing experience! … The food was absolutely delicious, fresh, and beautifully presented. Every dish we tried was full of flavor.',''],
+  ['Drive ISF','Local Guide · 2 months ago','The complimentary olives and bread were a lovely touch and very welcoming. The staff were friendly and attentive… Overall, a nice restaurant with good food, friendly service, and a great atmosphere.','Your kind words truly mean a lot to us ✨']
+];
+
+const GAL = ['g2','g13','g5','g11','g1','g6','g4','g10','g9','g3','g8','g7','g12'];
+
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+/* ---------- loader ---------- */
+let loaded = false;
+const done = () => { if (loaded) return; loaded = true; $('#loader').classList.add('done'); document.body.classList.add('ready'); setTimeout(() => $('#loader').remove(), 1100); };
+document.querySelector('#slides img').decode().catch(() => {}).then(() => setTimeout(done, 600));
+setTimeout(done, 2500); // never leave the loader stuck on slow image loads
+
+/* ---------- open/closed (Asia/Riyadh) ---------- */
+// day: 0=Sun..6=Sat, mins since midnight. Opens 13:00; closes 01:00, or 02:00 on the nights of Thu & Fri.
+function isOpen(day, mins) {
+  if (mins >= 780) return true;
+  const prev = (day + 6) % 7;
+  return mins < (prev === 4 || prev === 5 ? 120 : 60);
+}
+console.assert(isOpen(3, 800) && !isOpen(3, 700) && isOpen(5, 90) && !isOpen(0, 90) && isOpen(6, 110) && !isOpen(6, 130), 'isOpen self-check');
+function riyadhNow() {
+  const p = Object.fromEntries(new Intl.DateTimeFormat('en-US', {timeZone:'Asia/Riyadh', weekday:'short', hour:'numeric', minute:'numeric', hourCycle:'h23'}).formatToParts(new Date()).map(x => [x.type, x.value]));
+  return {day: ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(p.weekday), mins: (+p.hour % 24) * 60 + +p.minute};
+}
+function status() {
+  const {day, mins} = riyadhNow(), open = isOpen(day, mins);
+  $('#dot').classList.toggle('open', open);
+  $('#statusTxt').textContent = open ? 'Open now' : 'Opens 1 PM';
+}
+status(); setInterval(status, 60000);
+(function hours() {
+  const names = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'], order = [6,0,1,2,3,4,5];
+  const today = riyadhNow().day;
+  $('#hours').innerHTML = order.map(d => `<tr class="${d === today ? 'today' : ''}"><td>${names[d]}${d === today ? ' · today' : ''}</td><td>1:00 PM – ${d === 4 || d === 5 ? '2:00' : '1:00'} AM</td></tr>`).join('');
+})();
+
+/* ---------- nav ---------- */
+const nav = $('#nav'), fab = $('#fab');
+const credH = () => document.documentElement.style.setProperty('--ct', $('.credit').offsetHeight + 'px');
+credH(); addEventListener('resize', credH);
+const onScroll = () => { const y = scrollY; nav.classList.toggle('scrolled', y > 40); fab.classList.toggle('on', y > innerHeight * .8); };
+addEventListener('scroll', onScroll, {passive:true}); onScroll();
+const mnav = $('#mnav'), burger = $('#burger');
+const setM = o => { mnav.classList.toggle('open', o); mnav.setAttribute('aria-hidden', !o); burger.setAttribute('aria-expanded', o); document.body.style.overflow = o ? 'hidden' : ''; };
+burger.onclick = () => setM(true); $('#mclose').onclick = () => setM(false);
+mnav.querySelectorAll('a').forEach(a => a.onclick = () => setM(false));
+addEventListener('keydown', e => { if (e.key === 'Escape') setM(false); });
+
+/* ---------- hero slides ---------- */
+const slides = [...document.querySelectorAll('#slides img')], dots = $('#dots'), leak = $('#leak');
+const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches, finePtr = matchMedia('(pointer: fine)').matches;
+let si = 0, timer;
+slides.forEach((_, i) => { const b = document.createElement('button'); b.setAttribute('aria-label', 'Slide ' + (i + 1)); b.onclick = () => go(i); dots.appendChild(b); });
+const restart = (el, cls) => { el.classList.remove(cls); void el.offsetWidth; el.classList.add(cls); };
+function go(i) {
+  const prev = slides[si];
+  si = (i + slides.length) % slides.length;
+  slides.forEach(s => s.classList.remove('out'));
+  if (prev !== slides[si]) { prev.classList.remove('on'); prev.classList.add('out'); } // .out keeps the camera move running while it fades
+  [...dots.children].forEach((d, k) => d.classList.toggle('on', k === si));
+  restart(slides[si], 'on'); restart(leak, 'flash');
+  $('#capN').textContent = String(si + 1).padStart(2, '0'); $('#capT').textContent = slides[si].dataset.cap;
+  const bar = $('#capBar'), nb = bar.cloneNode(); bar.replaceWith(nb); // restarts the progress bar animation
+  clearInterval(timer); timer = setInterval(() => go(si + 1), 6000);
+}
+go(0);
+
+/* golden dust drifting through the hero */
+const cv = $('#dust'), cx = cv.getContext('2d');
+let P = [], dw = 0, dh = 0, heroVis = true;
+function sizeDust() {
+  const r = Math.min(devicePixelRatio || 1, 1.5);
+  dw = cv.offsetWidth; dh = cv.offsetHeight; cv.width = dw * r; cv.height = dh * r; cx.setTransform(r, 0, 0, r, 0, 0);
+  P = Array.from({length: dw < 700 ? 26 : 60}, () => ({x: Math.random() * dw, y: Math.random() * dh, r: Math.random() * 2.2 + .4, vx: (Math.random() - .5) * .18, vy: -Math.random() * .3 - .05, a: Math.random() * .5 + .2, t: Math.random() * 6}));
+}
+function dust() {
+  if (heroVis) {
+    cx.clearRect(0, 0, dw, dh); cx.fillStyle = '#ffd9b0';
+    for (const p of P) {
+      p.x += p.vx; p.y += p.vy; p.t += .02;
+      if (p.y < -5) { p.y = dh + 5; p.x = Math.random() * dw; }
+      cx.globalAlpha = p.a * (.6 + .4 * Math.sin(p.t));
+      cx.beginPath(); cx.arc(p.x, p.y, p.r, 0, 7); cx.fill();
+    }
+  }
+  requestAnimationFrame(dust);
+}
+if (!reduced) {
+  sizeDust(); addEventListener('resize', sizeDust); requestAnimationFrame(dust);
+  new IntersectionObserver(([e]) => heroVis = e.isIntersecting).observe($('.hero'));
+}
+
+/* depth: the camera leans toward the mouse */
+if (finePtr && !reduced) $('.hero').addEventListener('mousemove', e => {
+  const x = e.clientX / innerWidth - .5, y = e.clientY / innerHeight - .5;
+  $('#slides').style.transform = `rotateY(${x * 5}deg) rotateX(${-y * 4}deg) translateZ(30px)`;
+});
+
+/* ---------- marquee ---------- */
+const words = ['Truffle Risotto','Côte de Boeuf','Kimchi Kissed Tuna','Burrata','Pierrade de Boeuf','San Sebastian','The Mimosa','Escargots'];
+const half = words.map(w => `<span>${w}</span><img src="img/flower.svg" alt="">`).join('');
+$('#mq').innerHTML = half; $('#mq').parentElement.innerHTML += `<div class="t">${half}</div>`;
+
+/* ---------- signatures ---------- */
+const track = $('#track');
+track.innerHTML = SIGS.map(([img, n, d, p, b]) => `<article class="card"><div class="ph"><img src="${PH + img}.webp" alt="${esc(n)}" loading="lazy"></div><span class="badge">${b}</span><h3>${n}<small>SAR ${p}</small></h3><p>${d}</p></article>`).join('');
+const sig = $('#signatures'), prog = $('#prog'), wide = matchMedia('(min-width:981px)');
+let dist = 0;
+function sizeSig() {
+  if (!wide.matches) { sig.style.height = ''; track.style.transform = ''; return; }
+  dist = Math.max(0, track.scrollWidth - innerWidth + 40);
+  sig.style.height = (innerHeight + dist) + 'px';
+  pinSig();
+}
+function pinSig() {
+  if (!wide.matches) return;
+  const p = Math.min(1, Math.max(0, -sig.getBoundingClientRect().top / (dist || 1)));
+  track.style.transform = `translate3d(${-p * dist}px,0,0)`; prog.style.transform = `scaleX(${p})`;
+}
+addEventListener('scroll', pinSig, {passive:true});
+addEventListener('resize', sizeSig); addEventListener('load', sizeSig); sizeSig();
+
+/* ---------- menu ---------- */
+const state = {tab:'food', cat:'All', q:''};
+const tabs = $('#tabs'), chips = $('#chips'), out = $('#menuOut');
+let flat = [];
+function renderChips() {
+  const cats = ['All', ...Object.keys(MENU[state.tab])];
+  chips.innerHTML = cats.map(c => `<button class="${c === state.cat ? 'on' : ''}" data-c="${esc(c)}">${c}</button>`).join('');
+}
+function renderMenu() {
+  const q = state.q.trim().toLowerCase();
+  flat = [];
+  let html = '';
+  for (const [cat, items] of Object.entries(MENU[state.tab])) {
+    if (state.cat !== 'All' && cat !== state.cat) continue;
+    const list = items.filter(i => !q || (i[0] + ' ' + i[1]).toLowerCase().includes(q));
+    if (!list.length) continue;
+    const pics = list.filter(i => i[4]), plain = list.filter(i => !i[4]);
+    html += `<h3 class="cat-h">${cat}<small>${list.length} items</small></h3>`;
+    if (pics.length) html += `<div class="grid">${pics.map((i, k) => { flat.push([cat, ...i]); return `<button class="dish" data-i="${flat.length - 1}" style="animation-delay:${Math.min(k, 8) * 40}ms"><div class="im"><img src="${PH + i[4]}.webp" alt="${esc(i[0])}" loading="lazy"></div><div class="tx"><div class="row"><h4>${i[0]}</h4><span class="pr">SAR ${i[2]}</span></div>${i[1] ? `<p>${i[1]}</p>` : ''}${i[3] ? `<span class="cal">${i[3]} cal</span>` : ''}</div></button>`; }).join('')}</div>`;
+    if (plain.length) html += `<div class="lines" style="${pics.length ? 'margin-top:20px' : ''}">${plain.map(i => `<div class="line"><div><b>${i[0]}</b>${i[1] ? `<small>${i[1]}</small>` : i[3] ? `<small>${i[3]} cal</small>` : ''}</div><i></i><span>SAR ${i[2]}</span></div>`).join('')}</div>`;
+  }
+  out.innerHTML = html || `<p class="empty">Nothing matches “${esc(state.q)}” — try another word.</p>`;
+}
+tabs.onclick = e => {
+  const b = e.target.closest('button'); if (!b) return;
+  tabs.querySelectorAll('button').forEach(x => x.setAttribute('aria-selected', x === b));
+  state.tab = b.dataset.t; state.cat = 'All'; renderChips(); renderMenu();
+};
+chips.onclick = e => { const b = e.target.closest('button'); if (!b) return; state.cat = b.dataset.c; renderChips(); renderMenu(); };
+$('#q').oninput = e => { state.q = e.target.value; renderMenu(); };
+renderChips(); renderMenu();
+
+const dlg = $('#dlg');
+out.onclick = e => {
+  const b = e.target.closest('.dish'); if (!b) return;
+  const [cat, n, d, p, c, img] = flat[b.dataset.i];
+  $('#dImg').src = PH + img + '.webp'; $('#dImg').alt = n;
+  $('#dCat').textContent = cat; $('#dName').textContent = n; $('#dDesc').textContent = d || 'A Mimosa favourite.';
+  $('#dPrice').textContent = 'SAR ' + p; $('#dCal').textContent = c ? c + ' calories' : '';
+  dlg.showModal();
+};
+
+/* ---------- gallery + lightbox ---------- */
+const lb = $('#lb');
+$('#mason').innerHTML = GAL.map(g => `<button data-g="${g}" aria-label="Open photo"><img src="img/g/${g}.webp" alt="Mimosa Jeddah — guest photo" loading="lazy"></button>`).join('');
+$('#mason').onclick = e => { const b = e.target.closest('button'); if (!b) return; $('#lbImg').src = `img/g/${b.dataset.g}.webp`; lb.showModal(); };
+[dlg, lb].forEach(d => d.addEventListener('click', e => { if (e.target === d || e.target.closest('[data-close]')) d.close(); }));
+
+/* ---------- reviews ---------- */
+const rvs = $('#rvs');
+rvs.innerHTML = REVIEWS.map(([n, m, t, o]) => `<article class="rv"><span class="stars">★★★★★</span><q>${t}</q>${o ? `<p class="own"><b>Response from Mimosa:</b> ${o}</p>` : ''}<div class="who"><span class="av">${n[0].toUpperCase()}</span><div><b>${n}</b><small>${m}</small></div></div></article>`).join('');
+const step = () => rvs.firstElementChild.offsetWidth + 22;
+$('#rvNext').onclick = () => rvs.scrollBy({left: step(), behavior: 'smooth'});
+$('#rvPrev').onclick = () => rvs.scrollBy({left: -step(), behavior: 'smooth'});
+
+/* ---------- reservation -> WhatsApp ---------- */
+const form = $('#form'), dateIn = form.date, timeSel = $('#time');
+const todayStr = new Date().toLocaleDateString('en-CA', {timeZone: 'Asia/Riyadh'});
+dateIn.min = todayStr; dateIn.value = todayStr;
+for (let m = 13 * 60; m <= 24 * 60 + 30; m += 30) {
+  const h = Math.floor(m / 60) % 24, mm = String(m % 60).padStart(2, '0'), ap = h >= 12 ? 'PM' : 'AM', h12 = h % 12 || 12;
+  timeSel.add(new Option(`${h12}:${mm} ${ap}`));
+}
+timeSel.value = '8:00 PM';
+form.onsubmit = e => {
+  e.preventDefault();
+  const f = Object.fromEntries(new FormData(form)), err = $('#err');
+  if (!f.name.trim()) { err.textContent = 'Please add your name.'; form.name.focus(); return; }
+  if (!f.date || f.date < todayStr) { err.textContent = 'Please pick today or a future date.'; dateIn.focus(); return; }
+  err.textContent = '';
+  const msg = `Hello Mimosa 🌼 I'd like to reserve a table.\nName: ${f.name.trim()}\nDate: ${f.date}\nTime: ${f.time}\nGuests: ${f.guests}\nSeating: ${f.seat}\nOccasion: ${f.occasion}${f.note.trim() ? '\nNote: ' + f.note.trim() : ''}`;
+  window.open('https://wa.me/966543979744?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+};
+
+/* ---------- reveal + counters ---------- */
+const io = new IntersectionObserver(es => es.forEach(en => {
+  if (!en.isIntersecting) return;
+  en.target.classList.add('in'); io.unobserve(en.target);
+  en.target.querySelectorAll('[data-count]').forEach(el => {
+    const to = +el.dataset.count, dec = +(el.dataset.dec || 0), t0 = performance.now();
+    const tick = t => { const k = Math.min(1, (t - t0) / 1600), v = to * (1 - Math.pow(1 - k, 3)); el.textContent = dec ? v.toFixed(dec) : Math.round(v).toLocaleString('en'); if (k < 1) requestAnimationFrame(tick); };
+    requestAnimationFrame(tick);
+  });
+}), {threshold: .15});
+document.querySelectorAll('.r, .clip, #bars').forEach(el => io.observe(el));
+
+/* ---------- palm shadows ---------- */
+// One frond: leaflets fanned along a curved stem, drawn once and reused.
+const palmSVG = (() => {
+  let s = '', stem = 'M40 200';
+  for (let k = 1; k < 30; k++) {
+    const t = k / 30, x = 40 + t * 700, y = 200 + Math.sin(t * Math.PI * .9) * -60 + t * t * 90;
+    stem += ` L${x.toFixed(1)} ${y.toFixed(1)}`;
+    const ang = Math.atan2(-60 * Math.PI * .9 * Math.cos(t * Math.PI * .9) / 700 + 180 * t / 700, 1) * 57.3;
+    const L = 30 + 150 * Math.sin(Math.PI * Math.min(1, t * 1.15));
+    for (const side of [-1, 1]) s += `<ellipse cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" rx="${(L / 2).toFixed(1)}" ry="7" transform="rotate(${(ang + side * 62).toFixed(1)} ${x.toFixed(1)} ${y.toFixed(1)}) translate(${(side * L / 2).toFixed(1)} 0)"/>`;
+  }
+  return `<svg viewBox="0 0 820 420" aria-hidden="true"><path d="${stem}" stroke="#000" stroke-width="5" fill="none"/>${s}</svg>`;
+})();
+document.querySelectorAll('[data-palm]').forEach(sec => {
+  const d = document.createElement('div'); d.className = 'palm ' + sec.dataset.palm; d.innerHTML = palmSVG; sec.prepend(d);
+});
+
+/* ---------- statement: words light up as you scroll ---------- */
+const STMT = 'Long lunches @g/g13 that drift into *candle-lit* dinners, steaks @m/pierrade kissed by *fire,* salads @m/burrata that taste like the *coast,* and a terrace @g/g11 where Jeddah slows down.';
+$('#stmt').innerHTML = STMT.split(' ').map(w => w[0] === '@'
+  ? `<span class="pill w"><img src="img/${w.slice(1)}.webp" alt="" loading="lazy"></span>`
+  : `<span class="w">${w.replace(/\*(.+?)\*/, '<em>$1</em>')}</span>`).join(' ');
+const stmtWords = [...document.querySelectorAll('#stmt .w')];
+
+/* ---------- Instagram lanes ---------- */
+const L1 = ['kimchi-tuna','cote-de-boeuf','mimosa-drink','burrata','truffle-risotto','choc-raspberry','escargots','paloma','lamb-chops','berry-bliss'];
+const L2 = ['pierrade','corn-kale','passion-martini','lasagna','salmon-tartar','san-sebastian','gnocchi','riviera','short-ribs','gourmet-trio'];
+const laneHTML = list => [...list, ...list].map(n => `<figure><img src="${PH + n}.webp" alt="" loading="lazy"></figure>`).join('');
+$('#lane1').innerHTML = laneHTML(L1); $('#lane2').innerHTML = laneHTML(L2);
+
+/* ---------- scroll-driven scenes (one rAF per frame) ---------- */
+const clamp01 = v => Math.min(1, Math.max(0, v)), easeOut = v => 1 - Math.pow(1 - v, 3);
+const stage = $('.stage'), heroC = $('.hero-c'), ex = $('#terrace'), exPin = ex.querySelector('.ex-pin'), insta = $('.insta'), stmt = $('#stmt');
+let ticking = false;
+function scenes() {
+  ticking = false;
+  const vh = innerHeight, y = scrollY;
+  if (y < vh * 1.2) { stage.style.transform = `translate3d(0,${y * .35}px,0)`; heroC.style.opacity = 1 - clamp01(y / (vh * .7)); }
+
+  const sr = stmt.getBoundingClientRect(), sp = clamp01((vh * .9 - sr.top) / (sr.height + vh * .25)); // fully lit once the paragraph's bottom passes 65% of the screen
+  const lit = Math.round(sp * stmtWords.length);
+  stmtWords.forEach((w, k) => w.classList.toggle('lit', k < lit));
+
+  const er = ex.getBoundingClientRect(), ep = clamp01(-er.top / (er.height - vh)), e = easeOut(clamp01(ep / .6));
+  const ix = innerWidth < 700 ? 10 : 32;
+  exPin.style.setProperty('--iy', (1 - e) * 26 + '%'); exPin.style.setProperty('--ix', (1 - e) * ix + '%');
+  exPin.style.setProperty('--rr', (1 - e) * 300 + 'px'); exPin.style.setProperty('--sc', 1.3 - .3 * e);
+  exPin.style.setProperty('--dk', e * .4); exPin.style.setProperty('--to', clamp01((ep - .55) / .3));
+
+  const ir = insta.getBoundingClientRect();
+  if (ir.top < vh && ir.bottom > 0) {
+    const ip = clamp01((vh - ir.top) / (vh + ir.height));
+    $('#lane1').style.transform = `translate3d(${-ip * 35}%,0,0)`;
+    $('#lane2').style.transform = `translate3d(${-35 + ip * 35}%,0,0)`;
+  }
+}
+const queue = () => { if (!ticking) { ticking = true; requestAnimationFrame(scenes); } };
+addEventListener('scroll', queue, {passive: true}); addEventListener('resize', queue); scenes();
+
+/* ---------- cursor + magnetic buttons (mouse only) ---------- */
+if (finePtr && !reduced) {
+  const cur = $('#cur'), lab = cur.firstElementChild;
+  let mx = -100, my = -100, cxp = -100, cyp = -100;
+  document.documentElement.classList.add('has-cur');
+  addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; cur.classList.add('on');
+    const t = e.target.closest('.dish,.mason button,.card,[data-cur]');
+    cur.classList.toggle('big', !!t); lab.textContent = t ? (t.classList.contains('card') ? 'Taste' : t.closest('.mason') ? 'Open' : 'View') : '';
+  });
+  document.addEventListener('mouseleave', () => cur.classList.remove('on'));
+  const follow = () => { cxp += (mx - cxp) * .2; cyp += (my - cyp) * .2; cur.style.transform = `translate3d(${cxp}px,${cyp}px,0)`; requestAnimationFrame(follow); };
+  follow();
+  document.querySelectorAll('.btn').forEach(b => {
+    b.addEventListener('mousemove', e => { const r = b.getBoundingClientRect(); b.style.transform = `translate(${(e.clientX - r.left - r.width / 2) * .25}px,${(e.clientY - r.top - r.height / 2) * .35}px)`; });
+    b.addEventListener('mouseleave', () => b.style.transform = '');
+  });
+}
+</script>
+</body>
+</html>
